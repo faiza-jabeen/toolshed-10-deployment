@@ -8,7 +8,7 @@ committed configuration, not instructions to follow by hand.
 
 ```
 10-deployment/
-â”œâ”€â”€ .github/workflows/ci.yml   API tests â†’ client tests + bundle budget â†’ Lighthouse
+â”œâ”€â”€ .github/workflows/ci.yml   API tests â†’ client tests + bundle budget
 â”œâ”€â”€ render.yaml                one-click blueprint: API + disk, static client
 â”œâ”€â”€ docker-compose.yml         the whole stack locally
 â”œâ”€â”€ nginx.conf
@@ -147,7 +147,7 @@ ok    state-JFM_I6Gv.js     0.7 KB / 90 KB
 ok    index-Ca_U8R1r.css    3.4 KB / 12 KB
 ```
 
-`lighthouserc.json` fails the build below **90 performance / 95 accessibility /
+`lighthouserc.json` is run locally with npm run lh, and fails below **90 performance / 95 accessibility /
 90 best-practices / 90 SEO**, and on CLS above 0.1. Three runs, median taken.
 
 ## Run the whole stack locally
